@@ -1,0 +1,228 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\AI program\AI product studio(2)\second week\data-salaries\Facebook_Salaries_2018.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Facebook_Salaries_2018.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Job_Role" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\Facebook_Salaries_2018.csv" type="V_String" />
+            <Field name="Pay" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\Facebook_Salaries_2018.csv" type="V_String" />
+            <Field name="Location" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\Facebook_Salaries_2018.csv" type="V_String" />
+            <Field name="State" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\Facebook_Salaries_2018.csv" type="V_String" />
+            <Field name="Submit_Date" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\Facebook_Salaries_2018.csv" type="V_String" />
+            <Field name="Submit_Date_Mo" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\Facebook_Salaries_2018.csv" type="V_String" />
+            <Field name="Submit_Date_Yr" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\Facebook_Salaries_2018.csv" type="V_String" />
+            <Field name="Hire_Date" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\Facebook_Salaries_2018.csv" type="V_String" />
+            <Field name="Hire_Date_Mo" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\Facebook_Salaries_2018.csv" type="V_String" />
+            <Field name="Hire_Date_Yr" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\Facebook_Salaries_2018.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="90" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\AI program\AI product studio(2)\second week\data-salaries\Google_Salaries_2018.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Google_Salaries_2018.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Job_Role" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\Google_Salaries_2018.csv" type="V_String" />
+            <Field name="Pay" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\Google_Salaries_2018.csv" type="V_String" />
+            <Field name="Location" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\Google_Salaries_2018.csv" type="V_String" />
+            <Field name="State" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\Google_Salaries_2018.csv" type="V_String" />
+            <Field name="Submit_Date" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\Google_Salaries_2018.csv" type="V_String" />
+            <Field name="Submit_Date_Mo" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\Google_Salaries_2018.csv" type="V_String" />
+            <Field name="Submit_Date_Yr" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\Google_Salaries_2018.csv" type="V_String" />
+            <Field name="Hire_Date" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\Google_Salaries_2018.csv" type="V_String" />
+            <Field name="Hire_Date_Mo" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\Google_Salaries_2018.csv" type="V_String" />
+            <Field name="Hire_Date_Yr" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\Google_Salaries_2018.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\AI program\AI product studio(2)\second week\data-salaries\SalesForce_Salaries_2018.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>SalesForce_Salaries_2018.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Job_Role" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\SalesForce_Salaries_2018.csv" type="V_String" />
+            <Field name="Pay" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\SalesForce_Salaries_2018.csv" type="V_String" />
+            <Field name="Location" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\SalesForce_Salaries_2018.csv" type="V_String" />
+            <Field name="State" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\SalesForce_Salaries_2018.csv" type="V_String" />
+            <Field name="Submit_Date" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\SalesForce_Salaries_2018.csv" type="V_String" />
+            <Field name="Submit_Date_Mo" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\SalesForce_Salaries_2018.csv" type="V_String" />
+            <Field name="Submit_Date_Yr" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\SalesForce_Salaries_2018.csv" type="V_String" />
+            <Field name="Hire_Date" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\SalesForce_Salaries_2018.csv" type="V_String" />
+            <Field name="Hire_Date_Mo" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\SalesForce_Salaries_2018.csv" type="V_String" />
+            <Field name="Hire_Date_Yr" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\SalesForce_Salaries_2018.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\AI program\AI product studio(2)\second week\data-salaries\Workday_Salaries_2018.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Workday_Salaries_2018.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Job_Role" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\Workday_Salaries_2018.csv" type="V_String" />
+            <Field name="Pay" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\Workday_Salaries_2018.csv" type="V_String" />
+            <Field name="Location" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\Workday_Salaries_2018.csv" type="V_String" />
+            <Field name="State" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\Workday_Salaries_2018.csv" type="V_String" />
+            <Field name="Submit_Date" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\Workday_Salaries_2018.csv" type="V_String" />
+            <Field name="Submit_Date_Mo" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\Workday_Salaries_2018.csv" type="V_String" />
+            <Field name="Submit_Date_Yr" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\Workday_Salaries_2018.csv" type="V_String" />
+            <Field name="Hire_Date" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\Workday_Salaries_2018.csv" type="V_String" />
+            <Field name="Hire_Date_Mo" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\Workday_Salaries_2018.csv" type="V_String" />
+            <Field name="Hire_Date_Yr" size="254" source="File: C:\AI program\AI product studio(2)\second week\data-salaries\Workday_Salaries_2018.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+  </Nodes>
+  <Connections />
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>New Workflow-assignment2</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
