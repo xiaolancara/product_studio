@@ -1,0 +1,589 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.3">
+  <Nodes>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="65" y="16.99999" width="185.1003" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>training_datarobot</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="90" y="65.99999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\xiaon\Downloads\train.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>train.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="PassengerId" size="254" source="File: C:\Users\xiaon\Downloads\train.csv" type="V_String" />
+                <Field name="Survived" size="254" source="File: C:\Users\xiaon\Downloads\train.csv" type="V_String" />
+                <Field name="Pclass" size="254" source="File: C:\Users\xiaon\Downloads\train.csv" type="V_String" />
+                <Field name="Name" size="254" source="File: C:\Users\xiaon\Downloads\train.csv" type="V_String" />
+                <Field name="Sex" size="254" source="File: C:\Users\xiaon\Downloads\train.csv" type="V_String" />
+                <Field name="Age" size="254" source="File: C:\Users\xiaon\Downloads\train.csv" type="V_String" />
+                <Field name="SibSp" size="254" source="File: C:\Users\xiaon\Downloads\train.csv" type="V_String" />
+                <Field name="Parch" size="254" source="File: C:\Users\xiaon\Downloads\train.csv" type="V_String" />
+                <Field name="Ticket" size="254" source="File: C:\Users\xiaon\Downloads\train.csv" type="V_String" />
+                <Field name="Fare" size="254" source="File: C:\Users\xiaon\Downloads\train.csv" type="V_String" />
+                <Field name="Cabin" size="254" source="File: C:\Users\xiaon\Downloads\train.csv" type="V_String" />
+                <Field name="Embarked" size="254" source="File: C:\Users\xiaon\Downloads\train.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="198" y="138" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\xiaon\AppData\Local\Temp\Engine_11628_a6f78f90075c4b54bb3e1169ba22e39e_\Engine_26064_4910a0c9ea104aeeb785feb93f1f65f4_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="DataRobotModelFactory">
+            <Position x="198" y="66" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <page>automodel</page>
+              <apiToken>NWZjMWRlMzM2ZGZiYTA4M2YxODVjNDEyOnBwZWJ3bTZiRDFWWU5Nalo1b2cwR1RVV3NIVmFXMWNqNHlrMTMrNXJ5cXc9</apiToken>
+              <url>https://app.datarobot.com</url>
+              <projectName>Titanic_prediction_from_Alteryx</projectName>
+              <targetVar>Survived</targetVar>
+              <quickRun>true</quickRun>
+              <useManual>false</useManual>
+              <openInBrowser>false</openInBrowser>
+              <sslNoVerify>false</sslNoVerify>
+              <loggingLevel>INFO</loggingLevel>
+              <enableLogfile>false</enableLogfile>
+              <timeout>7200</timeout>
+              <uiDevModeEnabled>false</uiDevModeEnabled>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="Python" EngineDllEntryPoint="DataRobotModelFactory\DataRobotModelFactoryEngine.py" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="365" y="5" width="738" height="289" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>testing_prediction</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="390" y="77.99996" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\xiaon\Downloads\test.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>test.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="PassengerId" size="254" source="File: C:\Users\xiaon\Downloads\test.csv" type="V_String" />
+                <Field name="Pclass" size="254" source="File: C:\Users\xiaon\Downloads\test.csv" type="V_String" />
+                <Field name="Name" size="254" source="File: C:\Users\xiaon\Downloads\test.csv" type="V_String" />
+                <Field name="Sex" size="254" source="File: C:\Users\xiaon\Downloads\test.csv" type="V_String" />
+                <Field name="Age" size="254" source="File: C:\Users\xiaon\Downloads\test.csv" type="V_String" />
+                <Field name="SibSp" size="254" source="File: C:\Users\xiaon\Downloads\test.csv" type="V_String" />
+                <Field name="Parch" size="254" source="File: C:\Users\xiaon\Downloads\test.csv" type="V_String" />
+                <Field name="Ticket" size="254" source="File: C:\Users\xiaon\Downloads\test.csv" type="V_String" />
+                <Field name="Fare" size="254" source="File: C:\Users\xiaon\Downloads\test.csv" type="V_String" />
+                <Field name="Cabin" size="254" source="File: C:\Users\xiaon\Downloads\test.csv" type="V_String" />
+                <Field name="Embarked" size="254" source="File: C:\Users\xiaon\Downloads\test.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="486" y="185.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\xiaon\AppData\Local\Temp\Engine_21356_5b6c621f7efa47158e970f6435275346_\Engine_26064_da3a182835ef4124869f4d8309a96a77_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="DataRobotEnhancedPredictions">
+            <Position x="486" y="78.00008" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <did>
+              </did>
+              <apiKey>NWZjMWRlMzM2ZGZiYTA4M2YxODVjNDEyOnBwZWJ3bTZiRDFWWU5Nalo1b2cwR1RVV3NIVmFXMWNqNHlrMTMrNXJ5cXc9</apiKey>
+              <predictionType>models</predictionType>
+              <isDeploymentSslEnabled>true</isDeploymentSslEnabled>
+              <currentRoute>models</currentRoute>
+              <instanceURL>https://app.datarobot.com</instanceURL>
+              <pid>5fc1df2c8695875f6d556b73</pid>
+              <mid>5fc1df864ada007b14529cdf</mid>
+              <enableDedPred>false</enableDedPred>
+              <dedPredAllowed>false</dedPredAllowed>
+              <username>
+              </username>
+              <predURL>
+              </predURL>
+              <predKey>
+              </predKey>
+              <projectType>Binary</projectType>
+              <num_rows>0</num_rows>
+              <getReasonCodes>false</getReasonCodes>
+              <maxCodes>1</maxCodes>
+              <enableThresholdHigh>false</enableThresholdHigh>
+              <enableThresholdLow>false</enableThresholdLow>
+              <thresholdHigh>0</thresholdHigh>
+              <thresholdLow>0</thresholdLow>
+              <sslNoVerify>false</sslNoVerify>
+              <loggingLevel>INFO</loggingLevel>
+              <enable_logfile>false</enable_logfile>
+              <useTimeSeries>false</useTimeSeries>
+              <relaxKnownInAdvance>false</relaxKnownInAdvance>
+              <APIVersion>
+                <major>2</major>
+                <versionString>2.22</versionString>
+                <minor>22</minor>
+              </APIVersion>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="Python" EngineDllEntryPoint="DataRobotEnhancedPredictions\DataRobotEnhancedPredictionsEngine.py" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="618" y="78.00003" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="if [Positive Probability] &gt;=.5 then 1 else 0 endif" field="Survived" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Survived = if [Positive Probability] >=.5 then 1 else 0 endif
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="702" y="138" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\xiaon\AppData\Local\Temp\Engine_21356_5b6c621f7efa47158e970f6435275346_\Engine_26064_aa98bc9d971540cc85be420e07707e86_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="978" y="162" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">C:\Users\xiaon\Downloads\test_survived.csv</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>,</Delimeter>
+                <ForceQuotes>False</ForceQuotes>
+                <HeaderRow>True</HeaderRow>
+                <CodePage>28591</CodePage>
+                <WriteBOM>True</WriteBOM>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>test_survived.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="714" y="78.00001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Prediction" selected="False" />
+                <SelectField field="Positive Probability" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="798" y="54.00001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\xiaon\Downloads\test.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>test.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="PassengerId" size="254" source="File: C:\Users\xiaon\Downloads\test.csv" type="V_String" />
+                <Field name="Pclass" size="254" source="File: C:\Users\xiaon\Downloads\test.csv" type="V_String" />
+                <Field name="Name" size="254" source="File: C:\Users\xiaon\Downloads\test.csv" type="V_String" />
+                <Field name="Sex" size="254" source="File: C:\Users\xiaon\Downloads\test.csv" type="V_String" />
+                <Field name="Age" size="254" source="File: C:\Users\xiaon\Downloads\test.csv" type="V_String" />
+                <Field name="SibSp" size="254" source="File: C:\Users\xiaon\Downloads\test.csv" type="V_String" />
+                <Field name="Parch" size="254" source="File: C:\Users\xiaon\Downloads\test.csv" type="V_String" />
+                <Field name="Ticket" size="254" source="File: C:\Users\xiaon\Downloads\test.csv" type="V_String" />
+                <Field name="Fare" size="254" source="File: C:\Users\xiaon\Downloads\test.csv" type="V_String" />
+                <Field name="Cabin" size="254" source="File: C:\Users\xiaon\Downloads\test.csv" type="V_String" />
+                <Field name="Embarked" size="254" source="File: C:\Users\xiaon\Downloads\test.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="870" y="54" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Pclass" selected="False" />
+                <SelectField field="Name" selected="False" />
+                <SelectField field="Sex" selected="False" />
+                <SelectField field="Age" selected="False" />
+                <SelectField field="SibSp" selected="False" />
+                <SelectField field="Parch" selected="False" />
+                <SelectField field="Ticket" selected="False" />
+                <SelectField field="Fare" selected="False" />
+                <SelectField field="Cabin" selected="False" />
+                <SelectField field="Embarked" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="978" y="210" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\xiaon\AppData\Local\Temp\Engine_21356_5b6c621f7efa47158e970f6435275346_\Engine_26064_6200f2d538c64941a3ad6ffa55914b65_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="846" y="150" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="True">
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="21" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="21" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Join" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Join" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>DataRobot_alteryx_Titanic_excercise</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
