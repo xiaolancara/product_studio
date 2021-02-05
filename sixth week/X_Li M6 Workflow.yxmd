@@ -1,0 +1,635 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.3">
+  <Nodes>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="17" y="305" width="313" height="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Numerical Prediction</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="19">
+          <GuiSettings Plugin="Linear_Regression">
+            <Position x="42.00001" y="354" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="curPage">Home</Value>
+              <Value name="curTab">advanced</Value>
+              <Value name="standardize_pred">True</Value>
+              <Value name="internal_cv">True</Value>
+              <Value name="display_graphs">True</Value>
+              <Value name="set_seed_internal_cv">True</Value>
+              <Value name="set_seed_external_cv">True</Value>
+              <Value name="lambda_1se">True</Value>
+              <Value name="lambda_min">False</Value>
+              <Value name="Model Name">Linear_Regression_19</Value>
+              <Value name="Y Var">expenses</Value>
+              <Value name="X Vars">smoker</Value>
+              <Value name="Omit Constant">False</Value>
+              <Value name="Use Weights">False</Value>
+              <Value name="Weight Vec" />
+              <Value name="regularization">False</Value>
+              <Value name="alpha">0.5</Value>
+              <Value name="nfolds">5</Value>
+              <Value name="lambda">lambda_1se</Value>
+              <Value name="seed_internal_cv">1</Value>
+              <Value name="lambda_no_cv">0.5</Value>
+              <Value name="external_cv">False</Value>
+              <Value name="nfolds_external">5</Value>
+              <Value name="numberTrials">3</Value>
+              <Value name="external_seed_value">1</Value>
+              <Value name="graph.resolution">1x</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>select "expense" as the target variable and "smoker" as predictor.</AnnotationText>
+              <DefaultAnnotationText>Linear_Regression_19</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Linear_Regression/Supporting_Macros/Linear_Regression.yxmc" EngineDll="Macro" EngineDllEntryPoint="Linear_Regression/Supporting_Macros/Linear_Regression.yxmc" />
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="126" y="354" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\xiaon\AppData\Local\Temp\Engine_236_35e377e3cd3449cea8dd4cfb7b3fe4fb_\Engine_7856_fc20cfec5ff74c2e9423592c75f9a092_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="Linear_Regression">
+            <Position x="42" y="486" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="curPage">Home</Value>
+              <Value name="curTab">advanced</Value>
+              <Value name="standardize_pred">True</Value>
+              <Value name="internal_cv">True</Value>
+              <Value name="display_graphs">True</Value>
+              <Value name="set_seed_internal_cv">True</Value>
+              <Value name="set_seed_external_cv">True</Value>
+              <Value name="lambda_1se">True</Value>
+              <Value name="lambda_min">False</Value>
+              <Value name="Model Name">Linear_Regression_21</Value>
+              <Value name="Y Var">expenses</Value>
+              <Value name="X Vars">age,bmi,children,smoker</Value>
+              <Value name="Omit Constant">False</Value>
+              <Value name="Use Weights">False</Value>
+              <Value name="Weight Vec" />
+              <Value name="regularization">False</Value>
+              <Value name="alpha">0.5</Value>
+              <Value name="nfolds">5</Value>
+              <Value name="lambda">lambda_1se</Value>
+              <Value name="seed_internal_cv">1</Value>
+              <Value name="lambda_no_cv">0.5</Value>
+              <Value name="external_cv">False</Value>
+              <Value name="nfolds_external">5</Value>
+              <Value name="numberTrials">3</Value>
+              <Value name="external_seed_value">1</Value>
+              <Value name="graph.resolution">1x</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>select "expense" as the target variable and all the rest as predictors.</AnnotationText>
+              <DefaultAnnotationText>Linear_Regression_21</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Linear_Regression/Supporting_Macros/Linear_Regression.yxmc" EngineDll="Macro" EngineDllEntryPoint="Linear_Regression/Supporting_Macros/Linear_Regression.yxmc" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="138" y="486" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\xiaon\AppData\Local\Temp\Engine_236_35e377e3cd3449cea8dd4cfb7b3fe4fb_\Engine_7856_19202294363942e1b8e891a4e342000e_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="246" y="618" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\xiaon\AppData\Local\Temp\Engine_236_35e377e3cd3449cea8dd4cfb7b3fe4fb_\Engine_7856_79316fcac46b4d82b773663190b78c5d_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="25">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="42" y="618" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="age" selected="True" type="FixedDecimal" size="11.0" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText><![CDATA[ covert age to FixedDecimal ]]></AnnotationText>
+              <DefaultAnnotationText><![CDATA[ covert age to FixedDecimal ]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="26">
+          <GuiSettings Plugin="Decision_Tree">
+            <Position x="138" y="618" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="curPage">Home</Value>
+              <Value name="curTab">model</Value>
+              <Value name="curToggle">toggle-main</Value>
+              <Value name="display.static">True</Value>
+              <Value name="set_seed_cv">True</Value>
+              <Value name="showClassificationCV">False</Value>
+              <Value name="showWhenTreePlotAvailable">True</Value>
+              <Value name="showWhenAlgorithmAvailable">False</Value>
+              <Value name="use.gini">True</Value>
+              <Value name="use.information">False</Value>
+              <Value name="usesurrogate.0">True</Value>
+              <Value name="usesurrogate.1">False</Value>
+              <Value name="usesurrogate.2">False</Value>
+              <Value name="total.correct">True</Value>
+              <Value name="percent.correct">False</Value>
+              <Value name="model_type">auto</Value>
+              <Value name="auto">True</Value>
+              <Value name="classification">False</Value>
+              <Value name="regression">False</Value>
+              <Value name="tree_summary">Counts</Value>
+              <Value name="Counts">True</Value>
+              <Value name="Proportions">False</Value>
+              <Value name="tree_plot_size">tree.inches</Value>
+              <Value name="tree.inches">True</Value>
+              <Value name="tree.centimeters">False</Value>
+              <Value name="pruning_plot_size">prune.inches</Value>
+              <Value name="prune.inches">True</Value>
+              <Value name="prune.centimeters">False</Value>
+              <Value name="Model Name">Decision_Tree_26</Value>
+              <Value name="Y Var">expenses</Value>
+              <Value name="X Vars">age,bmi,children,smoker</Value>
+              <Value name="model.algorithm">rpart</Value>
+              <Value name="posClass">
+              </Value>
+              <Value name="use.weights">False</Value>
+              <Value name="select.weights" />
+              <Value name="splitting_criteria">use.gini</Value>
+              <Value name="surrogate_use">usesurrogate.0</Value>
+              <Value name="surrogate_split_criteria">total.correct</Value>
+              <Value name="min.split">20</Value>
+              <Value name="min.bucket">7</Value>
+              <Value name="xval.folds">10</Value>
+              <Value name="max.depth">20</Value>
+              <Value name="max.bins">
+              </Value>
+              <Value name="set_cp">False</Value>
+              <Value name="cp">0</Value>
+              <Value name="rules">False</Value>
+              <Value name="bands_check">False</Value>
+              <Value name="bands">10</Value>
+              <Value name="subset">False</Value>
+              <Value name="winnow">False</Value>
+              <Value name="GlobalPruning">False</Value>
+              <Value name="fuzzyThreshold">False</Value>
+              <Value name="earlyStopping">False</Value>
+              <Value name="trials">1</Value>
+              <Value name="CF">0.25</Value>
+              <Value name="minCases">2</Value>
+              <Value name="sample">0</Value>
+              <Value name="seed">1</Value>
+              <Value name="use_cv">False</Value>
+              <Value name="numberFolds">5</Value>
+              <Value name="numberTrials">3</Value>
+              <Value name="stratified">False</Value>
+              <Value name="cv_seed">1</Value>
+              <Value name="tree.plot">False</Value>
+              <Value name="Branch Dist">False</Value>
+              <Value name="tree.in.w">5.5</Value>
+              <Value name="tree.in.h">5.5</Value>
+              <Value name="tree.cm.w">13</Value>
+              <Value name="tree.cm.h">14.95</Value>
+              <Value name="tree.graph.resolution">1x</Value>
+              <Value name="tree.pointsize">8</Value>
+              <Value name="prune.plot">False</Value>
+              <Value name="prune.in.w">5.5</Value>
+              <Value name="prune.in.h">5.5</Value>
+              <Value name="prune.cm.w">13</Value>
+              <Value name="prune.cm.h">14.95</Value>
+              <Value name="prune.graph.resolution">1x</Value>
+              <Value name="prune.pointsize">10</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>select "expense" as the target variable and all the rest as predictors.</AnnotationText>
+              <DefaultAnnotationText>Decision_Tree_26</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Decision_Tree/Supporting_Macros/Decision_Tree.yxmc" EngineDll="Macro" EngineDllEntryPoint="Decision_Tree/Supporting_Macros/Decision_Tree.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="16.99999" y="4.999992" width="780" height="285" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>data preparation/ insurance data</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="41.99999" y="90.00002" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\AI program\(2)AI product studio\fifth week\insurance.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>insurance.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="age" size="254" source="File: C:\AI program\(2)AI product studio\fifth week\insurance.csv" type="V_String" />
+                <Field name="sex" size="254" source="File: C:\AI program\(2)AI product studio\fifth week\insurance.csv" type="V_String" />
+                <Field name="bmi" size="254" source="File: C:\AI program\(2)AI product studio\fifth week\insurance.csv" type="V_String" />
+                <Field name="children" size="254" source="File: C:\AI program\(2)AI product studio\fifth week\insurance.csv" type="V_String" />
+                <Field name="smoker" size="254" source="File: C:\AI program\(2)AI product studio\fifth week\insurance.csv" type="V_String" />
+                <Field name="region" size="254" source="File: C:\AI program\(2)AI product studio\fifth week\insurance.csv" type="V_String" />
+                <Field name="expenses" size="254" source="File: C:\AI program\(2)AI product studio\fifth week\insurance.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="126" y="90.00001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="Replace(Replace([sex], &quot;female&quot;, &quot;2&quot;),&quot;male&quot;,&quot;1&quot;)" field="sex" size="254" type="V_String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[sex = Replace(Replace([sex], "female", "2"),"male","1")
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="234" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="Replace(Replace([smoker], &quot;yes&quot;, &quot;1&quot;),&quot;no&quot;,&quot;0&quot;)" field="smoker" size="254" type="V_String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[smoker = Replace(Replace([smoker], "yes", "1"),"no","0")
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="450" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="age" selected="True" type="Int32" size="4" />
+                <SelectField field="sex" selected="True" type="Int32" size="4" />
+                <SelectField field="bmi" selected="True" type="Int32" size="4" />
+                <SelectField field="children" selected="True" type="Int32" size="4" />
+                <SelectField field="smoker" selected="True" type="Int32" size="4" />
+                <SelectField field="region" selected="True" type="Int32" size="4" />
+                <SelectField field="expenses" selected="True" type="Int64" size="8" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>convert the  expense type  to int 64, others are converted to int32</AnnotationText>
+              <DefaultAnnotationText>convert the  expense type  to int 64,
+others are converted to int32</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="342" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="Replace(Replace(Replace(Replace([region], &quot;southeast&quot;, &quot;1&quot;),&quot;southwest&quot;,&quot;2&quot;),&quot;northwest&quot;,&quot;3&quot;),&quot;northeast&quot;,&quot;4&quot;)" field="region" size="254" type="V_String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>region = Replace(Replace(Replace(Replace([region], "southeast", "1"),"southwest"...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings>
+            <Position x="558" y="78" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="do target">True</Value>
+              <Value name="target">expenses</Value>
+              <Value name="target level" />
+              <Value name="use fields">"age","sex","bmi","children","smoker","region"</Value>
+              <Value name="Pearson">True</Value>
+              <Value name="Spearman">False</Value>
+              <Value name="Hoeffding">False</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Target: "expense"
+variables: "others element"</AnnotationText>
+              <DefaultAnnotationText>Target: "expense"
+variables: "others element"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Association_Analysis.yxmc" />
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="666" y="53.99999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\xiaon\AppData\Local\Temp\Engine_236_35e377e3cd3449cea8dd4cfb7b3fe4fb_\Engine_7856_f6656568228048d7a70c035a49d4f784_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>We can tell the Association Measure of  "sex" and "region"  &lt; 0, which have  negative affect to target. Then drop these two element.</AnnotationText>
+              <DefaultAnnotationText>We can tell the "sex" and "region" has negative affect to target. Then drop these two element.</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="570" y="174" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="sex" selected="False" />
+                <SelectField field="region" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>drop "sex", "region"</AnnotationText>
+              <DefaultAnnotationText>drop "sex", "region"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="19" Connection="Reports" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Reports" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Reports" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="15" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>X_Li M6 Workflow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

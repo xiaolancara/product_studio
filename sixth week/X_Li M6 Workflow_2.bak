@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.3">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="29" y="16.99998" width="302.9604" height="149" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>data preparation/coronary heart disease</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="54" y="65.99998" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\AI program\(2)AI product studio\fifth week\framingham.csv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>,</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>framingham.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="male" size="254" source="File: C:\AI program\(2)AI product studio\fifth week\framingham.csv" type="V_String" />
+                <Field name="age" size="254" source="File: C:\AI program\(2)AI product studio\fifth week\framingham.csv" type="V_String" />
+                <Field name="education" size="254" source="File: C:\AI program\(2)AI product studio\fifth week\framingham.csv" type="V_String" />
+                <Field name="currentSmoker" size="254" source="File: C:\AI program\(2)AI product studio\fifth week\framingham.csv" type="V_String" />
+                <Field name="cigsPerDay" size="254" source="File: C:\AI program\(2)AI product studio\fifth week\framingham.csv" type="V_String" />
+                <Field name="BPMeds" size="254" source="File: C:\AI program\(2)AI product studio\fifth week\framingham.csv" type="V_String" />
+                <Field name="prevalentStroke" size="254" source="File: C:\AI program\(2)AI product studio\fifth week\framingham.csv" type="V_String" />
+                <Field name="prevalentHyp" size="254" source="File: C:\AI program\(2)AI product studio\fifth week\framingham.csv" type="V_String" />
+                <Field name="diabetes" size="254" source="File: C:\AI program\(2)AI product studio\fifth week\framingham.csv" type="V_String" />
+                <Field name="totChol" size="254" source="File: C:\AI program\(2)AI product studio\fifth week\framingham.csv" type="V_String" />
+                <Field name="sysBP" size="254" source="File: C:\AI program\(2)AI product studio\fifth week\framingham.csv" type="V_String" />
+                <Field name="diaBP" size="254" source="File: C:\AI program\(2)AI product studio\fifth week\framingham.csv" type="V_String" />
+                <Field name="BMI" size="254" source="File: C:\AI program\(2)AI product studio\fifth week\framingham.csv" type="V_String" />
+                <Field name="heartRate" size="254" source="File: C:\AI program\(2)AI product studio\fifth week\framingham.csv" type="V_String" />
+                <Field name="glucose" size="254" source="File: C:\AI program\(2)AI product studio\fifth week\framingham.csv" type="V_String" />
+                <Field name="TenYearCHD" size="254" source="File: C:\AI program\(2)AI product studio\fifth week\framingham.csv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings>
+            <Position x="138" y="66" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">False</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"male","age","education","currentSmoker","cigsPerDay","BPMeds","prevalentStroke","prevalentHyp","diabetes","totChol","sysBP","diaBP","BMI","heartRate","glucose","TenYearCHD"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input2" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>X_Li M6 Workflow_2</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
